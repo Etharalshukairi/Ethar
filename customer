@@ -12,3 +12,19 @@ def add_customer():
         "Email": email,
         "Phone": phone
     }
+    
+  # Add customer information to the customer_data dictionary using customer ID as the key
+    customer_data[customer_id] = customer_info
+
+    print("Customer added successfully!")
+
+def display_customer(customer_id):
+    # Check if the customer ID exists in the customer_data dictionary
+    if customer_id in customer_data:
+        customer_info = customer_data[customer_id]
+        print("Customer ID:", customer_id)
+        print("Name:", customer_info["Name"])
+        print("Email:", customer_info["Email"])
+        print("Phone:", customer_info["Phone"])
+    else:
+        print("Customer ID not found.")
