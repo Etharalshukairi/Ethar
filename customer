@@ -1,14 +1,9 @@
-customer_data = {}  # Dictionary to store customer data
+# Business Data: A list of dictionaries containing information about each sale
+Sales = [
+    {"product": "Shoes", "category": "Footwear", "price": 50.00, "quantity": 100},
+    {"product": "Hats", "category": "Accessories", "price": 20.00, "quantity": 200},
+    {"product": "Sunglasses", "category": "Accessories", "price": 30.00, "quantity": 50},
+    {"product": "T-shirts", "category": "Clothing", "price": 15.00, "quantity": 300},
+    {"product": "Jeans", "category": "Clothing", "price": 40.00, "quantity": 75}
+]
 
-def add_customer():
-    customer_id = input("Enter customer ID: ")
-    name = input("Enter customer name: ")
-    email = input("Enter customer email: ")
-    phone = input("Enter customer phone number: ")
-
-    # Create a dictionary to store customer information
-    customer_info = {
-        "Name": name,
-        "Email": email,
-        "Phone": phone
-    }
